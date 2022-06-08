@@ -1,0 +1,444 @@
+
+<html lang="tr" data-whatinput="initial" data-whatintent="mouse">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>iOS Shortcuts by AthenaSenior</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="iOS Shortcuts" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="shortcut,mobil" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="iOS Shortcuts" />
+        <meta property="og:title" content="iOS Shortcuts" />
+        <meta property="og:site_name" content="iOS Shortcuts" />
+        <meta property="og:url" content="https://github.com/AthenaSenior/ " />
+        <meta property="og:description" content="AthenaSenior" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="applogo.jpg" />
+        <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="text/javascript"></script>
+        <meta name="msapplication-starturl" content="https://github.com/AthenaSenior/" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" href="/appleicon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/180x180.png" />
+        <link rel="manifest" href="manifest.json" />
+		
+        <style>
+            .holder {
+                position: fixed;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                z-index: 9999;
+            }
+
+            .preloader {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                animation: rotatePreloader 2s infinite ease-in;
+            }
+
+            @keyframes rotatePreloader {
+                0% {
+                    transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+                }
+                100% {
+                    transform: translateX(-50%) translateY(-50%) rotateZ(-360deg);
+                }
+            }
+
+            .preloader div {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+
+            .preloader div:before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 0%;
+                width: 10%;
+                height: 10%;
+                background-color: #fff;
+                transform: translateX(-50%);
+                border-radius: 50%;
+            }
+
+            .preloader div:nth-child(1) {
+                transform: rotateZ(0deg);
+                animation: rotateCircle1 2s infinite linear;
+                z-index: 9;
+            }
+
+            @keyframes rotateCircle1 {
+                0% {
+                    opacity: 0;
+                }
+                0% {
+                    opacity: 1;
+                    transform: rotateZ(36deg);
+                }
+                7% {
+                    transform: rotateZ(0deg);
+                }
+                57% {
+                    transform: rotateZ(0deg);
+                }
+                100% {
+                    transform: rotateZ(-324deg);
+                    opacity: 1;
+                }
+            }
+
+            .preloader div:nth-child(2) {
+                transform: rotateZ(36deg);
+                animation: rotateCircle2 2s infinite linear;
+                z-index: 8;
+            }
+
+            @keyframes rotateCircle2 {
+                5% {
+                    opacity: 0;
+                }
+                5.0001% {
+                    opacity: 1;
+                    transform: rotateZ(0deg);
+                }
+                12% {
+                    transform: rotateZ(-36deg);
+                }
+                62% {
+                    transform: rotateZ(-36deg);
+                }
+                100% {
+                    transform: rotateZ(-324deg);
+                    opacity: 1;
+                }
+            }
+
+            .preloader div:nth-child(3) {
+                transform: rotateZ(72deg);
+                animation: rotateCircle3 2s infinite linear;
+                z-index: 7;
+            }
+
+            @keyframes rotateCircle3 {
+                10% {
+                    opacity: 0;
+                }
+                10.0002% {
+                    opacity: 1;
+                    transform: rotateZ(-36deg);
+                }
+                17% {
+                    transform: rotateZ(-72deg);
+                }
+                67% {
+                    transform: rotateZ(-72deg);
+                }
+                100% {
+                    transform: rotateZ(-324deg);
+                    opacity: 1;
+                }
+            }
+
+            .preloader div:nth-child(4) {
+                transform: rotateZ(108deg);
+                animation: rotateCircle4 2s infinite linear;
+                z-index: 6;
+            }
+
+            @keyframes rotateCircle4 {
+                15% {
+                    opacity: 0;
+                }
+                15.0003% {
+                    opacity: 1;
+                    transform: rotateZ(-72deg);
+                }
+                22% {
+                    transform: rotateZ(-108deg);
+                }
+                72% {
+                    transform: rotateZ(-108deg);
+                }
+                100% {
+                    transform: rotateZ(-324deg);
+                    opacity: 1;
+                }
+            }
+
+            .preloader div:nth-child(5) {
+                transform: rotateZ(144deg);
+                animation: rotateCircle5 2s infinite linear;
+                z-index: 5;
+            }
+
+            @keyframes rotateCircle5 {
+                20% {
+                    opacity: 0;
+                }
+                20.0004% {
+                    opacity: 1;
+                    transform: rotateZ(-108deg);
+                }
+                27% {
+                    transform: rotateZ(-144deg);
+                }
+                77% {
+                    transform: rotateZ(-144deg);
+                }
+                100% {
+                    transform: rotateZ(-324deg);
+                    opacity: 1;
+                }
+            }
+
+            .preloader div:nth-child(6) {
+                transform: rotateZ(180deg);
+                animation: rotateCircle6 2s infinite linear;
+                z-index: 4;
+            }
+
+            @keyframes rotateCircle6 {
+                25% {
+                    opacity: 0;
+                }
+                25.0005% {
+                    opacity: 1;
+                    transform: rotateZ(-144deg);
+                }
+                32% {
+                    transform: rotateZ(-180deg);
+                }
+                82% {
+                    transform: rotateZ(-180deg);
+                }
+                100% {
+                    transform: rotateZ(-324deg);
+                    opacity: 1;
+                }
+            }
+
+            .preloader div:nth-child(7) {
+                transform: rotateZ(216deg);
+                animation: rotateCircle7 2s infinite linear;
+                z-index: 3;
+            }
+
+            @keyframes rotateCircle7 {
+                30% {
+                    opacity: 0;
+                }
+                30.0006% {
+                    opacity: 1;
+                    transform: rotateZ(-180deg);
+                }
+                37% {
+                    transform: rotateZ(-216deg);
+                }
+                87% {
+                    transform: rotateZ(-216deg);
+                }
+                100% {
+                    transform: rotateZ(-324deg);
+                    opacity: 1;
+                }
+            }
+
+            .preloader div:nth-child(8) {
+                transform: rotateZ(252deg);
+                animation: rotateCircle8 2s infinite linear;
+                z-index: 2;
+            }
+
+            @keyframes rotateCircle8 {
+                35% {
+                    opacity: 0;
+                }
+                35.0007% {
+                    opacity: 1;
+                    transform: rotateZ(-216deg);
+                }
+                42% {
+                    transform: rotateZ(-252deg);
+                }
+                92% {
+                    transform: rotateZ(-252deg);
+                }
+                100% {
+                    transform: rotateZ(-324deg);
+                    opacity: 1;
+                }
+            }
+
+            .preloader div:nth-child(9) {
+                transform: rotateZ(288deg);
+                animation: rotateCircle9 2s infinite linear;
+                z-index: 1;
+            }
+
+            @keyframes rotateCircle9 {
+                40% {
+                    opacity: 0;
+                }
+                40.0008% {
+                    opacity: 1;
+                    transform: rotateZ(-252deg);
+                }
+                47% {
+                    transform: rotateZ(-288deg);
+                }
+                97% {
+                    transform: rotateZ(-288deg);
+                }
+                100% {
+                    transform: rotateZ(-324deg);
+                    opacity: 1;
+                }
+            }
+
+            .preloader div:nth-child(10) {
+                transform: rotateZ(324deg);
+                animation: rotateCircle10 2s infinite linear;
+                z-index: 0;
+            }
+
+            @keyframes rotateCircle10 {
+                45% {
+                    opacity: 0;
+                }
+                45.0009% {
+                    opacity: 1;
+                    transform: rotateZ(-288deg);
+                }
+                52% {
+                    transform: rotateZ(-324deg);
+                }
+                102% {
+                    transform: rotateZ(-324deg);
+                }
+                100% {
+                    transform: rotateZ(-324deg);
+                    opacity: 1;
+                }
+            }
+        </style>
+        <meta class="foundation-mq" />
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            var addToHomeConfig = {
+                expire: 0,
+                lifespan: 60000,
+                message: "tr_tr",
+            };
+        </script>
+        <script type="text/javascript" src="add2home.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="add2home.css" />
+        <div class="holder" style="display: none;">
+            <div class="preloader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="full-bg">
+            <div class="grid-container">
+                <div class="grid-y grid-frame">
+                    <div class="logo cell small-3"></div>
+                    <div class="header cell small-5">
+                        <img class="header-img" src="mobil-logo.png" />
+                    </div>
+                    <div class="cell small-4" id="stand" style="display: none;">
+                        <button type="button" id="adres" class="site button yellow expanded" style="background-color: #FF5E33;">Giriş</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            link = "https://github.com/AthenaSenior/";
+            var _0x5391 = [
+                "\x77\x69\x6e\x64\x6f\x77\x7c\x69\x66\x7c\x74\x6f\x67\x67\x6c\x65\x7c\x73\x74\x61\x6e\x64\x61\x6c\x6f\x6e\x65\x7c\x73\x6c\x6f\x77\x7c\x6e\x61\x76\x69\x67\x61\x74\x6f\x72\x7c\x73\x74\x61\x6e\x64\x7c\x66\x75\x6e\x63\x74\x69\x6f\x6e\x7c\x68\x6f\x6c\x64\x65\x72\x7c\x69\x70\x6f\x64\x7c\x61\x64\x72\x65\x73\x7c\x69\x70\x61\x64\x7c\x69\x70\x68\x6f\x6e\x65\x7c\x67\x69\x7c\x6c\x69\x6e\x6b\x7c\x63\x6c\x69\x63\x6b\x7c\x66\x61\x64\x65\x49\x6e\x7c\x6c\x6f\x63\x61\x74\x69\x6f\x6e\x7c\x6d\x61\x74\x63\x68\x4d\x65\x64\x69\x61\x7c\x6f\x6e\x7c\x6c\x6f\x61\x64\x7c\x66\x61\x64\x65\x4f\x75\x74\x7c\x6d\x61\x74\x63\x68\x65\x73\x7c\x6d\x6f\x64\x65\x7c\x70\x6c\x61\x74\x66\x6f\x72\x6d\x7c\x65\x6c\x73\x65\x7c\x64\x69\x73\x70\x6c\x61\x79\x7c\x74\x65\x73\x74",
+                "\x73\x70\x6c\x69\x74",
+                "\x74\x6f\x53\x74\x72\x69\x6e\x67",
+                "\x72\x65\x70\x6c\x61\x63\x65",
+                "\x5c\x77\x2b",
+                "\x24\x28\x27\x23\x61\x27\x29\x2e\x66\x28\x37\x28\x29\x7b\x30\x2e\x68\x3d\x65\x3b\x24\x28\x27\x2e\x38\x27\x29\x2e\x67\x28\x22\x34\x22\x29\x7d\x29\x3b\x31\x28\x28\x2f\x63\x7c\x39\x7c\x62\x2f\x64\x29\x2e\x72\x28\x35\x2e\x6f\x29\x29\x7b\x31\x28\x35\x2e\x33\x29\x7b\x24\x28\x27\x23\x36\x27\x29\x2e\x32\x28\x29\x7d\x7d\x70\x20\x31\x28\x30\x2e\x69\x28\x27\x28\x71\x2d\x6e\x3a\x20\x33\x29\x27\x29\x2e\x6d\x29\x7b\x24\x28\x27\x23\x36\x27\x29\x2e\x32\x28\x29\x7d\x24\x28\x30\x29\x2e\x6a\x28\x27\x6b\x27\x2c\x37\x28\x29\x7b\x24\x28\x22\x2e\x38\x22\x29\x2e\x6c\x28\x22\x34\x22\x29\x7d\x29\x3b",
+            ];
+            (function (_0x427c6f, _0x517e3f) {
+                var _0x533658 = function (_0x280b4f) {
+                    while (--_0x280b4f) {
+                        _0x427c6f["push"](_0x427c6f["shift"]());
+                    }
+                };
+                _0x533658(++_0x517e3f);
+            })(_0x5391, 0xb0);
+            var _0x6336 = function (_0x29d8cb, _0x1c8eb1) {
+                _0x29d8cb = _0x29d8cb - 0x0;
+                var _0x5e0d3e = _0x5391[_0x29d8cb];
+                return _0x5e0d3e;
+            };
+            eval(
+                (function (_0x5b241f, _0x5a6075, _0x5d831a, _0xcc3657, _0x4c1f96, _0x1874ee) {
+                    _0x4c1f96 = function (_0x5d831a) {
+                        return _0x5d831a[_0x6336("0x0")](0x24);
+                    };
+                    if (!""[_0x6336("0x1")](/^/, String)) {
+                        while (_0x5d831a--) {
+                            _0x1874ee[_0x5d831a[_0x6336("0x0")](_0x5a6075)] = _0xcc3657[_0x5d831a] || _0x5d831a[_0x6336("0x0")](_0x5a6075);
+                        }
+                        _0xcc3657 = [
+                            function (_0x4c1f96) {
+                                return _0x1874ee[_0x4c1f96];
+                            },
+                        ];
+                        _0x4c1f96 = function () {
+                            return _0x6336("0x2");
+                        };
+                        _0x5d831a = 0x1;
+                    }
+                    while (_0x5d831a--) {
+                        if (_0xcc3657[_0x5d831a]) {
+                            _0x5b241f = _0x5b241f["\x72\x65\x70\x6c\x61\x63\x65"](new RegExp("\x5c\x62" + _0x4c1f96(_0x5d831a) + "\x5c\x62", "\x67"), _0xcc3657[_0x5d831a]);
+                        }
+                    }
+                    return _0x5b241f;
+                })(_0x6336("0x3"), 0x1c, 0x1c, _0x6336("0x4")[_0x6336("0x5")]("\x7c"), 0x0, {})
+            );
+        </script>
+        <script src="app.js" type="text/javascript"></script>
+    </body>
+</html>
